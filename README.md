@@ -66,11 +66,6 @@ Graph paths show which nodes and relationships the traversal returned, including
 
 TechCompass also provides graph and dependency queries for exploring project context stored in FalkorDB. The available information depends on which project data has been ingested, such as architecture concepts, components, packages, documentation, and source files.
 
-### API
-
-The FastAPI backend provides readiness checks, graph and dependency queries, and graph-backed agent workflows. The update workflow is available through `POST /api/updates/run`; progress and results are streamed to the browser using server-sent events.
-
-> **Implementation note:** A route listed in `api-contract.yaml` is not necessarily implemented by the backend. Features such as scheduled feed monitoring, a persistent signal feed, opportunity aggregation, and action-plan management should be documented as planned until they are available in the running application.
 
 ## 🚀 Getting Started & Local Setup
 
